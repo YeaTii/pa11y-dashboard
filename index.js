@@ -43,7 +43,7 @@ require('./app')(config, (error, app) => {
 
 	// Start the webservice if required
 	if (typeof config.webservice === 'object') {
-		require('pa11y-webservice')(config.webservice, (webserviceError, webservice) => {
+		require('@yeatii/pa11y-webservice')(config.webservice, (webserviceError, webservice) => {
 			if (webserviceError) {
 				console.error(webserviceError.stack);
 				process.exit(1);
