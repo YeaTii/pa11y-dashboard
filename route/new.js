@@ -48,6 +48,12 @@ function route(app) {
 		const newTask = createNewTask(request, parsedActions, parsedHeaders);
 
 		app.webservice.tasks.create(newTask, (error, task) => {
+			console.log('************');
+			console.log('************');
+			console.log('************');
+			console.log('************');
+			console.log('************');
+			console.log(task);
 			if (error) {
 				const standards = getStandards().map(standard => {
 					if (standard.title === newTask.standard) {
@@ -69,7 +75,7 @@ function route(app) {
 					task: newTask
 				});
 			}
-			response.redirect(`/${task.id}?added`);
+			response.redirect(`/${task._id}?added`);
 		});
 	});
 
