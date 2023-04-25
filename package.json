@@ -1,7 +1,6 @@
 {
   "name": "@yeatii/pa11y-dashboard",
-  "version": "5.0.0",
-  "private": true,
+  "version": "5.0.1",
   "description": "Pa11y Dashboard is a visual web interface to the Pa11y accessibility reporter",
   "keywords": [
     "accessibility",
